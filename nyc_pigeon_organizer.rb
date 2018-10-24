@@ -12,6 +12,7 @@ def nyc_pigeon_organizer(data)
         unless pigeon_list.has_key?(name)
           pigeon_list[name] = {}
         end
+        if data[attribute]
       end
     end
   end

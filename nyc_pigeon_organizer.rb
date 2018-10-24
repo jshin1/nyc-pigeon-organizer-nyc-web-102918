@@ -14,6 +14,7 @@ def nyc_pigeon_organizer(data)
         end
         if v_array.include?(name)
           pigeon_list[name][attribute] << k.to_s.to_a
+        end
       end
     end
   end

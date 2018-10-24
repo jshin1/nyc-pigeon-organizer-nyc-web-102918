@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, attribute_data|
     attribute_data.each do |k, v_array|
       v_array.each do |name|
+        binding.pry
         unless pigeon_list.has_key?(name)
           pigeon_list[name] = {}
         end
@@ -15,5 +16,4 @@ def nyc_pigeon_organizer(data)
     end
   end
   pigeon_list
-  binding.pry
 end

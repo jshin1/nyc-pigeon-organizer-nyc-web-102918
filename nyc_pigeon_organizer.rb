@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
         
         pigeon_list.each do |the_name, the_data|
           binding.pry
-          name
+          pigeon_list[the_name]
         end
         
       end

@@ -12,6 +12,7 @@ def nyc_pigeon_organizer(data)
       v_array.each do |name|
         unless pigeon_list.has_key?(name)
           pigeon_list[name] = {}
+        end
         unless pigeon_list[name].has_key?(attribute)
           pigeon_list[name][attribute] = []
           if v_array.include?(name)

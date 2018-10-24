@@ -11,6 +11,12 @@ def nyc_pigeon_organizer(data)
         unless pigeon_list.has_key?(name)
           pigeon_list[name] = {}
         end
+        
+        pigeon_list.each do |name, data|
+          binding.pry
+          name
+        end
+        
       end
     end
     pigeon_list[name][attribute] = []

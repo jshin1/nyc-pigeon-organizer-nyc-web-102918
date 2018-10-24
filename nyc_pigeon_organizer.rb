@@ -11,11 +11,13 @@ def nyc_pigeon_organizer(data)
         unless pigeon_list.has_key?(name)
           pigeon_list[name] = {}
         end
-        unless pigeon_list[name].has_key?(attribute)
+        if pigeon_list[name].has_key?(attribute) == false
           pigeon_list[name][attribute] = []
           if v_array.include?(name)
             pigeon_list[name][attribute] << k.to_s
           end
+        else
+          pigeon_list[name][attribute] << k.to_s
         end
       end
     end

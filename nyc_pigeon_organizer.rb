@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
           pigeon_list[name] = {}
         end
         
-        pigeon_list.each do |name, data|
+        pigeon_list.each do |the_name, the_data|
           binding.pry
           name
         end

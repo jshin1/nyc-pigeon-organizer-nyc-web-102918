@@ -12,10 +12,10 @@ def nyc_pigeon_organizer(data)
           pigeon_list[name] = {}
         end
       end
-      pigeon_list[name][attribute] = []
-      if v_array.include?(name)
-        pigeon_list[name][attribute] << k.to_s
-      end
+    end
+    pigeon_list[name][attribute] = []
+    if v_array.include?(name)
+      pigeon_list[name][attribute] << k.to_s
     end
   end
   pigeon_list

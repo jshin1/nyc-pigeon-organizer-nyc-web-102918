@@ -9,7 +9,8 @@ def nyc_pigeon_organizer(data)
     attribute_data.each do |k, v_array|
       v_array.each do |name|
         unless pigeon_list.has_key?(name)
-        pigeon_list[name] = {}
+          pigeon_list[name] = {}
+        end
       end
     end
   end
